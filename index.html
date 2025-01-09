@@ -1,0 +1,39 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Todo List</h1>
+      <div id="filter-btns">
+        <button id="all" class="active">All</button>
+        <button id="completed">Completed</button>
+        <button id="active">Active</button>
+      </div>
+
+      <div id="search-container">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search tasks…"
+          aria-label="Search tasks"
+        />
+      </div>
+
+      <ul id="task-list"></ul>
+
+      <div id="add-task">
+        <input type="text" id="task-input" placeholder="Add a new task" />
+        <button id="add-task-btn" disabled>Add Task</button>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
